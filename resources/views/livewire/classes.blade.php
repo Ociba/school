@@ -12,10 +12,16 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput2">Category</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" wire:model="category" placeholder="Enter Email">
+                <select wire:model="level_id" class="form-control">
+                    @foreach($level as $lev)
+                    <option value="{{$lev->id}}">{{$lev->level}}</option>
+                    @endforeach
+                 </select>
                 @error('category') <span class="text-danger error">{{ $message }}</span>@enderror
             </div>
-            <button class="btn btn-primary" type="submit">Save</button>
+            <div class="text-center">
+            <button class="btn btn-primary" type="submit"><i class="ti-save"></i> Save</button>
+            </div>
         </form>
     </div>
 @livewireScripts

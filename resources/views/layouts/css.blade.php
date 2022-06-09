@@ -1,6 +1,6 @@
 <!-- Favicon icon -->
 <link rel="icon" type="image/png" sizes="16x16" href="{{asset('admin/dist/images/logo.png')}}">
-<title>Education - Dashboard</title>
+<title>Education - {{Request()->route()->getName()}}</title>
 <!-- This page CSS -->
 <!-- chartist CSS -->
 <link href="{{ asset('admin/morrisjs/morris.css')}}" rel="stylesheet">

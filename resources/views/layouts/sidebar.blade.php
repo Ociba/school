@@ -15,10 +15,10 @@
                         </li>
                         <li> <a class="waves-effect waves-dark" href="dashboard.html"><i class="icon-speedometer"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">Applicants</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-layout-grid2"></i><span class="hide-menu">Categories</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="app-calendar.html">Pending</a></li>
-                                <li><a href="app-chat.html">Successful</a></li>
+                                <li><a href="/academics/levels">Levels</a></li>
+                                <li><a href="/academics/classes">Classes</a></li>
                                 <li><a href="app-ticket.html">Ongoing</a></li>
                                 <li><a href="app-contact.html">Completed</a></li>
                             </ul>
