@@ -20,16 +20,24 @@
                                 <li><a href="/academics/levels">Levels</a></li>
                                 <li><a href="/academics/classes">Classes</a></li>
                                 <li><a href="/academics/subjects">Subjects</a></li>
-                                <li><a href="app-contact.html">Completed</a></li>
+                                <li><a href="app-contact.html">Committees Category</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Registration</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="/academics/students-registration">Students</a></li>
+                                <li><a href="app-email-detail.html">Teaching Staff</a></li>
+                                <li><a href="app-compose.html">Non Teaching Staff</a></li>
+                                <li><a href="app-compose.html">Committes</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Eduction Level</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="app-email.html">Ordinary</a></li>
-                        <li><a href="app-email-detail.html">Advanced</a></li>
-                        <li><a href="app-compose.html">Technical</a></li>
-                        <li><a href="app-compose.html">University</a></li>
-                    </ul>
+                                <li><a href="app-email-detail.html">Advanced</a></li>
+                                <li><a href="app-compose.html">Technical</a></li>
+                                <li><a href="app-compose.html">University</a></li>
+                            </ul>
                 </li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Education Awards </span></a>
                     <ul aria-expanded="false" class="collapse">

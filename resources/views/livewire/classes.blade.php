@@ -3,7 +3,11 @@
     @livewireStyles
     <div class="bg-white p-4 sm:px-6 sm:py-4 border-b border-gray-150">
         
-    @if(session()->has('success')) <div style="color:blue; font-weight:bold; text-align:center;">{{session('success')}}</div>@endif
+        @if(session()->has('success'))
+        <div class="card-header bg-success">
+            <h4 class="mb-0 text-white">{{session('success')}}</h4>
+        </div>
+        @endif
         <form  wire:submit.prevent="savePrimaryClass">
             <div class="form-group" style="margin-bottom:5px;">
                 <label for="exampleFormControlInput1">Class</label>

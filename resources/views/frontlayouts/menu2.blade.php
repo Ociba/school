@@ -1,4 +1,4 @@
-<div class="header-top">
+<div class="header-top" style="background:#0000ff;">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-5 d-none d-lg-block d-md-block">
@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<div class="header-logo-menu sticker" style="background-color:#0000ff;!important">
+<div class="header-logo-menu sticker" style="background-color:#000099;!important">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-12">
