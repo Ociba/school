@@ -25,7 +25,7 @@
                 <!--End of Header Area-->
                 <!--Background Area Start-->
                 <div class="background-area no-animation">	
-                    <img src="{{ asset('front/img/slider/1.jpg')}}" alt=""/>
+                    <img src="{{ asset('front/img/slider/4.jpg')}}" alt=""/>
                     <div class="banner-content static-text">
                         <div class="container">
                             <div class="row">

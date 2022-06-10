@@ -2,13 +2,13 @@ a:hover, .carousel-style-one.owl-theme .owl-controls .owl-nav div:hover, .button
   color: #ffbf00;
 }
 .mainmenu ul#nav > li > a:after, .mainmenu ul#nav.menu-white > li > a:after, .search-menu, .button-default:hover, .button-green,.button-default, .single-item .button-default, .button-large.button-default, .single-latest-item .button-default, .single-product-text .button-default, .single-event-item .button-default, .subscribe-form > button, .social-icons > a:hover, .footer-area, .newsletter-tw, .pagination-content.number .pagination li a:hover, .pagination-content.number .pagination li.current a, .pagination-content.number .pagination li:first-child a, .pagination-content.number .pagination li:last-child a, .product-details-content .button-default, .product-details-content .social-links a:hover, .duration-title, h4.title:after, .tution-fee, .single-sidebar-widget .social-links a:hover, .single-sidebar-widget .tags li a:hover, .pagination-content .pagination, .news-details-content .social-links a:hover, .contact-form-area .button-default, .skill-bar-item .progress-bar, #scrollUp, .bg-green, .bg-blue:hover, .preview-2 .nivo-directionNav a.nivo-prevNav:hover::before, .preview-2 .nivo-directionNav a.nivo-nextNav:hover::before, .slider-three .preview-2 .nivo-controlNav a, .footer-widget-area.footer-widget-four  {
-  background: #ffbf00;
+  background: #000099;
 }
 #particles-js, #particles-js.bg-color-1 {
-    background-color: #ffbf00;
+    background-color: #000099;
 }
 .search-form, .single-item, .single-latest-text, .single-product-text, .single-event-text, .subscribe-form > button, .subscribe-form > button:hover, .pagination-content.number .pagination li a, .subscribe-form > button, .subscribe-form > button:hover, .pagination-content.number .pagination li a, .pagination-content.number .pagination li a:hover, .pagination-content.number .pagination li.current a, .product-details-content .social-links a:hover, .single-teacher-text, .single-course-details, .course-duration .text, .tutor-image > img, .single-sidebar-widget .social-links a:hover, .single-sidebar-widget .tags li a:hover, .single-sidebar-widget .single-item, .event-details-content .single-event-item, .recent-content-item > a, .quote-section, .news-details-content .social-links a:hover, .shortcode-area i, .shortcode-area h3, .border-green, .slider-three .nivo-controlNav a.active:before, .slider-three .nivo-controlNav a:hover:before {
-  border-color: #ffbf00;
+  border-color: #000099;
 }
 
 .header-top:after{ 

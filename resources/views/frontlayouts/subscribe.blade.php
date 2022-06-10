@@ -11,7 +11,7 @@
                     <form action="#" id="mc-form" class="mc-form footer-newsletter fix">
                         <div class="subscribe-form">
                             <input id="mc-email" type="email" name="email" placeholder="Enter your email address...">
-                            <button id="mc-submit" type="submit">SUBSCRIBE</button>
+                            <button id="mc-submit" type="submit" style="background:#000099; border:1px solid #000099">SUBSCRIBE</button>
                         </div>    
                     </form>
                     <!-- mailchimp-alerts Start -->

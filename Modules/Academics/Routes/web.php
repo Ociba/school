@@ -15,4 +15,5 @@ Route::prefix('academics')->group(function() {
     Route::get('/', 'AcademicsController@index'); 
     Route::get('/levels','LevelsController@levels')->name('Levels');
     Route::get('/classes','ClassesController@getClasses')->name('Classes');
+    Route::get('/subjects','SubjectsController@getSubjects')->name('Subjects');
 });

@@ -10,7 +10,7 @@
                                 <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Balance</a></li>
                                 <li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li>
                                 <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
-                                <li><a href="javascript:void(0)"><i class="ti-power-off"></i> Logout</a></li>
+                                <li><a href="/logout"><i class="ti-power-off"></i> Logout</a></li>
                             </ul>
                         </li>
                         <li> <a class="waves-effect waves-dark" href="dashboard.html"><i class="icon-speedometer"></i><span class="hide-menu">Dashboard</span></a>
@@ -19,7 +19,7 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="/academics/levels">Levels</a></li>
                                 <li><a href="/academics/classes">Classes</a></li>
-                                <li><a href="app-ticket.html">Ongoing</a></li>
+                                <li><a href="/academics/subjects">Subjects</a></li>
                                 <li><a href="app-contact.html">Completed</a></li>
                             </ul>
                         </li>

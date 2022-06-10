@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<div class="header-logo-menu sticker" style="background-color:#ff0000!important">
+<div class="header-logo-menu sticker" style="background-color:#0000ff;!important">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-12">
@@ -170,6 +170,7 @@
                                                 <li><a href="/parents">Games & Sports Club </a></li>
                                                 <li><a href="/parents">Girl & Boy Guide Club</a></li>
                                                 <li><a href="/parents">MDD Club</a></li>
+                                                <li><a href="/parents">ICT Club</a></li>
                                                 <li><a href="/parents">Scripture Union</a></li>
                                                 <li><a href="/parents">Save Environment Club </a></li>
                                             </ul>
@@ -337,6 +338,7 @@
                                                 <li><a href="/parents">Games & Sports Club </a></li>
                                                 <li><a href="/parents">Girl & Boy Guide Club</a></li>
                                                 <li><a href="/parents">MDD Club</a></li>
+                                                <li><a href="/parents">ICT Club</a></li>
                                                 <li><a href="/parents">Scripture Union</a></li>
                                                 <li><a href="/parents">Save Environment Club </a></li>
                                             </ul>

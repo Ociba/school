@@ -70,7 +70,7 @@
 </div>
 <!--End of Footer Widget Area-->
 <!--Footer Area Start-->
-<footer class="footer-area" style="background-color: #ff0000;">
+<footer class="footer-area" style="background-color: #000099;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-7 col-12">
