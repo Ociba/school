@@ -1001,7 +1001,7 @@ body {
 /*  4. About Area
 /*----------------------------------------*/
 .about-area {
-    background: rgba(0, 0, 0, 0) url("img/banner/1.jpg") no-repeat scroll center top;
+    background: rgba(255, 255, 255, 0) url("img/banner/1.jpg") no-repeat scroll center top;
     color: #ffffff;
     margin-top: 10px;
     padding-bottom: 54px;

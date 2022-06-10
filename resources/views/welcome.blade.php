@@ -25,7 +25,7 @@
                 <!--End of Header Area-->
                 <!--Background Area Start-->
                 <div class="background-area no-animation">	
-                    <img src="{{ asset('front/img/slider/4.jpg')}}" alt=""/>
+                    <img src="{{ asset('front/img/slider/comp1.png')}}" style="width:100%;" alt=""/>
                     <div class="banner-content static-text">
                         <div class="container">
                             <div class="row">
@@ -34,7 +34,7 @@
                                         <div class="text-content text-center">
                                             <h1 class="title1 text-center mb-20">
                                                 <span class="tlt block" data-in-effect="rollIn" data-out-effect="fadeOutRight" >Education Needs</span>
-                                                <span class="tlt block" data-in-effect="fadeInLeftBig" data-out-effect="fadeOutRight">Complete Solution</span>
+                                                <span class="tlt block" data-in-effect="fadeInLeftBig" data-out-effect="fadeOutRight">A Complete Solution</span>
                                             </h1>
                                             <div class="banner-readmore wow bounceInUp" data-wow-duration="2500ms" data-wow-delay=".1s">
                                                 <a class="button-default" href="#">View Courses</a>	                
