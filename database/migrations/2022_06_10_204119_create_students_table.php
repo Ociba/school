@@ -15,13 +15,14 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
-            $table->string('student_name');
+            $table->string('name');
             $table->string('date_of_birth');
             $table->string('gender');
             $table->foreignId('student_level');
             $table->foreignId('district_id');
             $table->string('county');
             $table->string('village');
+            $table->string('contact');
             $table->string('registration_number');
             $table->string('nin')->nullable();
             $table->string('disease');
@@ -35,7 +36,7 @@ return new class extends Migration
             $table->string('emergency_name');
             $table->string('emergency_contact');
             $table->string('emergency_nin')->nullable();
-            $table->string('passport_photo');
+            $table->string('current_photo');
             $table->foreignId('created_by');
             $table->timestamps();
         });

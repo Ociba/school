@@ -4,7 +4,7 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="user-pro"> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><img src="{{ asset('admin/dist/images/ociba.jpg')}}" alt="user-img" class="img-circle"><span class="hide-menu">Prof. Mark</span></a>
+                        <li class="user-pro"> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><img src="{{ asset('admin/dist/images/ociba.jpg')}}" alt="user-img" class="img-circle"><span class="hide-menu"><span style="color:blue;">{{auth()->user()->UserCategory()}}</span></span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
                                 <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Balance</a></li>
@@ -20,18 +20,16 @@
                                 <li><a href="/academics/levels">Levels</a></li>
                                 <li><a href="/academics/classes">Classes</a></li>
                                 <li><a href="/academics/subjects">Subjects</a></li>
-                                <li><a href="app-contact.html">Committees Category</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Registration</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="/academics/students-registration">Students</a></li>
-                                <li><a href="app-email-detail.html">Teaching Staff</a></li>
-                                <li><a href="app-compose.html">Non Teaching Staff</a></li>
-                                <li><a href="app-compose.html">Committes</a></li>
+                                <li><a href="/academics/get-teaching-staffs">Teaching Staff</a></li>
+                                <li><a href="/academics/non-teaching-staffs">Non Teaching Staff</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Eduction Level</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Examinations</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="app-email.html">Ordinary</a></li>
                                 <li><a href="app-email-detail.html">Advanced</a></li>
@@ -39,7 +37,7 @@
                                 <li><a href="app-compose.html">University</a></li>
                             </ul>
                 </li>
-                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Education Awards </span></a>
+                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="ti-palette"></i><span class="hide-menu">Results </span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="ui-cards.html">Certificate</a></li>
                         <li><a href="ui-user-card.html">Diploma</a></li>

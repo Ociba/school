@@ -25,9 +25,8 @@ class AllSubjects extends Component
     * this function gets the all subjects
     */
    private function getSubjects(){
-       $search = '%'.$this->search.'%';
        return Subject::orderBy($this->sortBy, $this->sortDirection)
-       ->where('subject','like',$search)
+       ->search($this->search)
        ->Paginate($this->perPage);
    }
 }

@@ -1,0 +1,13 @@
+{
+    "name": "TeachingStaff",
+    "alias": "teachingstaff",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TeachingStaff\\Providers\\TeachingStaffServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

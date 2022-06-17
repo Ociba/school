@@ -48,7 +48,11 @@
                 {{ $slot }}
             </main>
         </div>
-
+        <script>
+         window.addEventListener('closeModal', event =>{
+            $('#edit-committee').modal('hide');
+         })
+         </script>
         @stack('modals')
         @livewire('livewire-ui-modal')
         @livewireScripts

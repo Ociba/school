@@ -58,7 +58,7 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
-                               @livewire('add-student')
+                               @livewire('all-students-registration-data')
                             </div>
                         </div>
                     </div>

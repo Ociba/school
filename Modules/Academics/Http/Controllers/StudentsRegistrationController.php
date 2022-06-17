@@ -16,7 +16,12 @@ class StudentsRegistrationController extends Controller
     {
         return view('academics::students');
     }
-
+    /**
+     * This function gets add students form
+     */
+    public function AddStudentForm(){
+        return view('academics::add_student');
+    }
     /**
      * Show the form for creating a new resource.
      * @return Renderable

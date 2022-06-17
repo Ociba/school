@@ -7,13 +7,14 @@ trait CreateUserAccount{
     /**
      * this function creates a user
      */
-    public static function createAccount($student_level,$student_name,$email, $password, $passport_photo){
+    public static function createAccount($contact,$user_category,$name,$email, $password, $current_photo){
         User::create(array(
-            'name'                  => $student_name,
+            'name'                  => $name,
             'email'                 => $email,
-            'student_level'         => $student_level,
+            'contact'               => $contact,
             'password'              => Hash::make($password),
-            'profile_photo_path'    => $passport_photo
+            'profile_photo_path'    => $current_photo,
+            'user_category'         =>$user_category,
         )); 
     }
 }

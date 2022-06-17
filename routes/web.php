@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LogoutController;
-
+use App\Http\Controllers\LogoutController;  
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,14 +18,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified'
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard');
+//     })->name('dashboard');
+// });
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+Route::get('/adminstration/admin-dashboard',[DashboardController::Class,'getDashboard'])->name('Admin Dashboard');
+Route::get('/dashboard',[DashboardController::Class,'getAcademicDashboard'])->name('Academic Dashboard');
 });
 Route::get('/logout',[LogoutController::Class,'logoutUser'])->middleware('auth');
 Route::get('/register', function () {return redirect('/404-error');});

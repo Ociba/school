@@ -15,10 +15,11 @@ class AddStudent extends ModalComponent
 {
     use SaveToFolder,WithFileUploads,CreateUserAccount;
 
-    public $student_name;
+    public $name;
+    public $contact;
     public $date_of_birth;
     public $gender;
-    public $student_level;
+    public $user_category;
     public $district_id;
     public $county;
     public $village;
@@ -43,7 +44,7 @@ class AddStudent extends ModalComponent
 
      //validating the requests
      protected $rules = [
-        'student_name'           => 'required',
+        'name'                   => 'required',
         'date_of_birth'          => 'required',
         'gender'                 => 'required',
         'district_id'            => 'required',
@@ -65,8 +66,8 @@ class AddStudent extends ModalComponent
         'email'                  => 'required|unique:users',
         'password'               => 'required',
         'confirm_password'       => 'required|same:password',
-        'student_level'          => 'required',
-        'passport_photo'          => 'required|max:1024',
+        'user_category'          => 'required',
+        'current_photo'          => 'required|max:1024',
     ];
 
     public function render()
@@ -80,13 +81,14 @@ class AddStudent extends ModalComponent
      */
     public function saveStudentInfo(){
         $this->validate();
-        $this->createAccount($this->student_level, $this->student_name, $this->email,$this->password, 'student_photos/'.$this->passport_photo);
+        $this->createAccount($this->contact, $this->name, $this->user_category,$this->email,$this->password, 'student_photos/'.$this->current_photo);
         Student::create(array(
-            'student_name'              => $this->student_name,
+            'name'                      => $this->name,
+            'contact'                   =>$this->contact,
             'date_of_birth'             => $this->date_of_birth,
             'gender'                    => $this->gender,
-            'student_level'             => $this->student_level,
-            'passport_photo'            => $this->saveItemToFolder('student_photos',$this->passport_photo),
+            'user_category'             => $this->user_category,
+            'current_photo'            => $this->saveItemToFolder('student_photos',$this->current_photo),
             'district_id'               => $this->district_id,
             'county'                    => $this->county,
             'village'                   => $this->village,

@@ -180,6 +180,7 @@
                                 <li><a href="/apply-now">Apply Online</a>
                                 </li>
                                 <li><a href="/contact">Contact</a></li>
+                                <li><a href="#">Donate</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -348,6 +349,7 @@
                             <li><a href="/apply-now">Apply Online</a>
                             </li>
                             <li><a href="/contact">Contact us</a></li>
+                            <li><a href="#">Donate</a></li>
                         </ul>
                     </nav>
                 </div>					

@@ -25,10 +25,9 @@ class ClassesTable extends Component
      * this function gets the classes
      */
     private function getClasses(){
-        $search = '%'.$this->search.'%';
         return PrimaryClass::join('levels','levels.id','primary_classes.level_id')
         ->orderBy($this->sortBy, $this->sortDirection)
-        ->where('levels.level','like',$search)
+        ->search($this->search)
         ->Paginate($this->perPage,['primary_classes.*','levels.level']);
     }
 }

@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\User;
+use Auth;
 
 class User extends Authenticatable
 {
@@ -27,7 +29,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'student_level',
+        'contact',
+        'user_category',
     ];
 
     /**
@@ -59,4 +62,10 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+    /**
+     * This function gets user catergory for logged in User
+     */
+    public function UserCategory(){
+        return User::join('user_categories','user_categories.id','users.user_category')->where('users.id',auth()->user()->id)->value('user_categories.category');
+    }
 }

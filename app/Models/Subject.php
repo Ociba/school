@@ -9,4 +9,10 @@ class Subject extends Model
 {
     use HasFactory;
     protected $fillable =['subject','subject_status'];
+
+    public function scopeSearch($query, $val){
+        return $query
+        ->where('subject','like','%'.$val.'%') 
+        ->Orwhere('subject_status','like','%'.$val.'%');
+    }
 }
