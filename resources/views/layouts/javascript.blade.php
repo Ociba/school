@@ -23,3 +23,8 @@
 <link href="{{asset('alpine/tailwind.css')}}" rel="stylesheet">
 @livewireScripts
 @livewire('livewire-ui-modal')
+<script>
+    window.addEventListener('closeModal', event => {
+    $("#edit-committee").modal('hide');                
+})
+</script>

@@ -34,9 +34,11 @@ class EditCommittee extends ModalComponent
             Committee::where('id',$this->committee_id)->update(array(
                 'committee_name'=>$this->committee_name
             ));
-            $this->emit('update');
+            //$this->emit('update');
             session()->flash('success','Committee Updated Successfully!!');
             
-            $this->dispatchBrowserEvent('update');
+            $this->dispatchBrowserEvent('EditCommittee');
+
+
         }
 }

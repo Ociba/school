@@ -49,7 +49,7 @@
                     <td> {{$get_committees->firstItem() + $i}} </td>
                     <td class="text-wrap"> {{$committees->committee_name}} </td>
                     <td>
-                        <button class="btn btn-sm btn-warning" onclick="Livewire.emit('openModal', 'edit-committee',{{ json_encode(['committee_id' => $committees->id])}})">Edit</button>
+                        <button class="btn btn-sm btn-primary" onclick="Livewire.emit('openModal', 'edit-committee',{{ json_encode(['committee_id' => $committees->id])}})">Edit</button>
                         <button class="btn btn-sm btn-danger">Delete</button> 
                     </td>
                 </tr>
