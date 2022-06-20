@@ -1,10 +1,10 @@
 <div>
     {{-- The whole world belongs to you. --}}
-    <div class="d-flex align-classs-center">
+    {{--<div class="d-flex align-classs-center">
         <div class="ms-auto">
         <button onclick="Livewire.emit('openModal', 'classes')" class="btn btn-info  m-l-15 text-white mb-3"><i class="icon-plus"></i> Add Class</button>
         </div>
-    </div>
+    </div>--}}
     <div class="col-12 mb-4">
         <div class="d-md-flex align-items-center mt-3">
             <div class="col-md-4">
@@ -34,35 +34,33 @@
         <table class="table table-bordered table-hover">
             <thead>
             <tr>
-                <th scope="col" wire:click="sortBy('primary_classes.id')" style="cursor: pointer;">#
-                    @include('partials._sort-icon',['field'=>'primary_classes.id'])
+                <th scope="col" wire:click="sortBy('students.id')" style="cursor: pointer;">#
+                    @include('partials._sort-icon',['field'=>'students.id'])
                 </th>
-                <th scope="col" wire:click="sortBy('class_one')" style="cursor: pointer;">Class
-                    @include('partials._sort-icon',['field'=>'class_one'])
+                <th scope="col" wire:click="sortBy('name')" style="cursor: pointer;">Name of Pupil
+                    @include('partials._sort-icon',['field'=>'name'])
                 </th>
                 <th scope="col">Options</th>
             </tr>
             </thead>
             <tbody>
-               @foreach ($view_all_classes as $i=>$class)
-                    @for($j=0; $j<count(get_classes(unserialize($class->class_one))); $j++)
+               @foreach ($get_pupils_for_this_class as $i=>$students)
                     <tr>
-                        <td> {{$view_all_classes->firstItem() + $j}} </td>
-                        <td class="text-wrap"> {{ get_classes(unserialize($class->class_one))[$j]}} </td>
+                        <td> {{$get_pupils_for_this_class->firstItem() + $i}} </td>
+                        <td class="text-wrap"> {{ $students->name}} </td>
                         <td>
-                            <a href="/teachingstaff/pupils-list/{{implode('', unserialize($class->class_one))[$j]}}" class="btn btn-sm btn-info">View Subjects</a> 
+                            <a href="#" class="btn btn-sm btn-info">Add Marks</a> 
                             <button class="btn btn-sm btn-secondary">edit</button> 
                             <button class="btn btn-sm btn-danger">Delete</button> 
                         </td>
                     </tr>
-                    @endfor
                 @endforeach
             </tbody>
         </table>
        <div class="d-flex align-classs-center">
-            <h5 class="card-title text-lowercase">Showing {{$view_all_classes->firstItem()}} to {{$view_all_classes->lastItem()}} out of {{$view_all_classes->total()}} items</h5>
+            <h5 class="card-title text-lowercase">Showing {{$get_pupils_for_this_class->firstItem()}} to {{$get_pupils_for_this_class->lastItem()}} out of {{$get_pupils_for_this_class->total()}} items</h5>
             <div class="ms-auto">
-            {{$view_all_classes->links()}}
+            {{$get_pupils_for_this_class->links()}}
             </div>
         </div>
     </div>

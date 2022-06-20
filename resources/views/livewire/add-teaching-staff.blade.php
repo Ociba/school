@@ -21,7 +21,7 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="form-label">Name <span style="color:red">*</span></label>
-                                        <input type="text" id="StudentName" wire:model="name" class="form-control" placeholder="John Odongo">
+                                        <input type="text" id="StudentName" wire:model="name" class="form-control" placeholder="">
                                         @error('name') <span class="text-danger">{{ $message }}</span> @enderror
                                     </div>
                                 </div>
@@ -205,11 +205,9 @@
                                     <div class="form-group">
                                         <label class="form-label">Teachers Responsibility <span style="color:red">*</span></label>
                                         <select class="form-control form-select" wire:model="user_category">
-                                        <option value="teacher">Classroom Teacher</option>
-                                        <option value="Headteacher">Headteacher</option>
-                                        <option value="deputy headteacher">Deputy Headteacher</option>
-                                        <option value="head of department">Head of Department</option>
-                                        <option value="director">Director</option>
+                                        @foreach($get_user_category as $category)
+                                        <option value="{{$category->id}}">{{$category->category}}</option>
+                                        @endforeach
                                         </select>
                                         @error('user_category') <span class="text-danger">{{ $message }}</span> @enderror
                                     </div>

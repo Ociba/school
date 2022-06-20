@@ -16,7 +16,18 @@ class TeachingStaffController extends Controller
     {
         return view('teachingstaff::index');
     }
-
+     /**
+      * Thisfunction gets subjects for logged in teacher
+      */
+      public function getSubjects(){
+        return view('teachingstaff::subjects');
+      }
+       /**
+      * Thisfunction gets pupils to add marks
+      */
+      public function getPupilsForMarks($class_id){
+        return view('teachingstaff::pupils_list_for_marks',compact('class_id'));
+      }
     /**
      * Show the form for creating a new resource.
      * @return Renderable

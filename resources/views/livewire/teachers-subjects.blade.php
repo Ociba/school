@@ -1,10 +1,5 @@
 <div>
-    {{-- The whole world belongs to you. --}}
-    <div class="d-flex align-classs-center">
-        <div class="ms-auto">
-        <button onclick="Livewire.emit('openModal', 'classes')" class="btn btn-info  m-l-15 text-white mb-3"><i class="icon-plus"></i> Add Class</button>
-        </div>
-    </div>
+    {{-- The best athlete wants his opponent at his best. --}}
     <div class="col-12 mb-4">
         <div class="d-md-flex align-items-center mt-3">
             <div class="col-md-4">
@@ -34,23 +29,23 @@
         <table class="table table-bordered table-hover">
             <thead>
             <tr>
-                <th scope="col" wire:click="sortBy('primary_classes.id')" style="cursor: pointer;">#
-                    @include('partials._sort-icon',['field'=>'primary_classes.id'])
+                <th scope="col" wire:click="sortBy('subjects.id')" style="cursor: pointer;">#
+                    @include('partials._sort-icon',['field'=>'subjects.id'])
                 </th>
-                <th scope="col" wire:click="sortBy('class_one')" style="cursor: pointer;">Class
-                    @include('partials._sort-icon',['field'=>'class_one'])
+                <th scope="col" wire:click="sortBy('subjects')" style="cursor: pointer;">Subjects
+                    @include('partials._sort-icon',['field'=>'subjects'])
                 </th>
                 <th scope="col">Options</th>
             </tr>
             </thead>
             <tbody>
-               @foreach ($view_all_classes as $i=>$class)
-                    @for($j=0; $j<count(get_classes(unserialize($class->class_one))); $j++)
+               @foreach ($view_all_subjects as $i=>$subject)
+               @for($s=0; $s<count(get_Teachers_subject(unserialize($subject->subjects))); $s++)
                     <tr>
-                        <td> {{$view_all_classes->firstItem() + $j}} </td>
-                        <td class="text-wrap"> {{ get_classes(unserialize($class->class_one))[$j]}} </td>
+                        <td> {{$view_all_subjects->firstItem() + $s}} </td>
+                        <td class="text-wrap"> {{ get_Teachers_subject(unserialize($subject->subjects))[$s]}} </td>
                         <td>
-                            <a href="/teachingstaff/pupils-list/{{implode('', unserialize($class->class_one))[$j]}}" class="btn btn-sm btn-info">View Subjects</a> 
+                             <a href="/teachingstaff/add-mrks/{{$subject->id}}" class="btn btn-sm btn-success">Add Marks</a>
                             <button class="btn btn-sm btn-secondary">edit</button> 
                             <button class="btn btn-sm btn-danger">Delete</button> 
                         </td>
@@ -60,9 +55,9 @@
             </tbody>
         </table>
        <div class="d-flex align-classs-center">
-            <h5 class="card-title text-lowercase">Showing {{$view_all_classes->firstItem()}} to {{$view_all_classes->lastItem()}} out of {{$view_all_classes->total()}} items</h5>
+            <h5 class="card-title text-lowercase">Showing {{$view_all_subjects->firstItem()}} to {{$view_all_subjects->lastItem()}} out of {{$view_all_subjects->total()}} items</h5>
             <div class="ms-auto">
-            {{$view_all_classes->links()}}
+            {{$view_all_subjects->links()}}
             </div>
         </div>
     </div>

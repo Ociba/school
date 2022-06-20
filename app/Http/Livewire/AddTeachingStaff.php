@@ -10,6 +10,7 @@ use Livewire\WithFileUploads;
 use App\Models\PrimaryClass;
 use App\Models\District;
 use App\Models\Subject;
+use App\Models\UserCategory;
 use Session;
 
 
@@ -80,14 +81,15 @@ class AddTeachingStaff extends Component
         $get_all_districts =$this->getDistricts();
          $get_all_classes =$this->getClasses();
          $get_all_subject =$this->getSubjects();
-        return view('livewire.add-teaching-staff',compact('get_all_classes','get_all_districts','get_all_subject'));
+         $get_user_category =$this->getUserCategory();
+        return view('livewire.add-teaching-staff',compact('get_all_classes','get_all_districts','get_all_subject','get_user_category'));
     }
     /**
      * save the student information
      */
     public function saveTeachersInfo(){
         $this->validate();
-        //$this->createAccount($this->contact, $this->name, $this->email,$this->password,$this->user_category, 'teachers_photos/'.$this->current_photo);
+        $this->createAccount($this->name, $this->email,$this->user_category,$this->contact,$this->password, 'teachers_photos/'.$this->current_photo);
         TeachingStaff::create(array(
             'name'                         => $this->name,
             'dob'                           => $this->dob,
@@ -136,6 +138,12 @@ class AddTeachingStaff extends Component
      */
     private function getSubjects(){
         return Subject::get();
+    }
+       /**
+     * This function gets user category
+     */
+    private function getUserCategory(){
+        return UserCategory::get();
     }
 
 }

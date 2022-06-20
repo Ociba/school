@@ -168,7 +168,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="/contact">Contact</a></li>
-                                <li><a href="/login">Account</a></li>
+                                <li><a href="/login">My Account</a></li>
                                 <li><a href="#">Donate</a></li>
                             </ul>
                         </nav>
@@ -344,7 +344,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="/contact">Contact</a></li>
-                                <li><a href="/login">Account</a></li>
+                                <li><a href="/login">My Account</a></li>
                                 <li><a href="#">Donate</a></li>
                             </ul>
                     </nav>

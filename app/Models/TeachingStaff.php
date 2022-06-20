@@ -13,9 +13,9 @@ class TeachingStaff extends Model
 
     public function scopeSearch($query, $val){
         return $query
-        ->where('name','like','%'.$val.'%') 
+        ->where('teaching_staff.name','like','%'.$val.'%') 
         ->Orwhere('dob','like','%'.$val.'%')
         ->Orwhere('teachers_registration_number','like','%'.$val.'%')
-        ->Orwhere('contact','like','%'.$val.'%');
+        ->Orwhere('teaching_staff.contact','like','%'.$val.'%');
     }
 }

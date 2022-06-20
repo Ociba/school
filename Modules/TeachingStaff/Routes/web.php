@@ -12,7 +12,8 @@
 */
 
 Route::group(['prefix'=>'teachingstaff', 'middleware'=>['auth']],function(){  
-    Route::get('/dashboard', 'TeachingStaffController@index')->name('My Dashboard');
-    Route::get('/all-classes', 'ClassessController@teachersClasses')->name('My Classes');
-    Route::get('/view-subjects/{{teachers_id}}', 'ClassessController@teachersClasses')->name('My Classes');
+    Route::get('/dashboard', 'TeachingStaffController@index')->name('My Dashboard'); 
+    Route::get('/all-classes', 'ClassessController@teachersClasses')->name('My Classes'); 
+    Route::get('/view-subjects/{teachers_id}', 'TeachingStaffController@getSubjects')->name('My Subjects');
+    Route::get('/pupils-list/{class_id}', 'TeachingStaffController@getPupilsForMarks')->name('Pupils List');
 });

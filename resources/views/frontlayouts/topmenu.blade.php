@@ -5,7 +5,7 @@
                 <span>Have any question? <a href="tel:+256753652367">+256753652367</a></span>
             </div>
             <div class="col-lg-5 col-md-7 col-12">
-                <div class="header-top-right">
+                <div class="header-top-right" style="background:blue;">
                     <div class="content"><a href="login.html"><i class="zmdi zmdi-account"></i> My Account</a>
                     </div>
                     <div class="content"><a href="approved-applicants.html"><i class="zmdi zmdi-favorite"></i> Approved</a></div>

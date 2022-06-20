@@ -574,7 +574,7 @@
         <!--End of Main Wrapper Area--> 
         
         <!-- Color Switcher -->
-        @include('frontlayouts.color-switcher')
+        {{--@include('frontlayouts.color-switcher')--}}
         <!-- Color Switcher end -->	
         
         
